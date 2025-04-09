@@ -59,7 +59,7 @@ answerBox.addEventListener("keydown", (key) => {
     if (gameAttempts >= maxAttempts) {
         answerBox.remove();
         gameAttempts += 1;
-        prompt("The word was " + wordToGuess);
+        alert("The word was " + wordToGuess);
     }
 
     gameAttempts += 1;
