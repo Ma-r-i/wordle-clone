@@ -1,0 +1,77 @@
+:root {
+    --bg-color1: rgb(45, 45, 45);
+    --bg-color2: rgb(65, 65, 65);
+    --text-color: #fff;
+    --wrong-color: rgb(30, 30, 30);
+    --correct-color: rgb(0, 255, 0);
+    --almost-color: rgb(255, 255, 0);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color1);
+}
+
+.gameCtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    width: 30%;
+    height: 10%;
+    border: 1px solid var(--bg-color2);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.wordCtn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bg-color2);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500%;
+}
+
+.correct {
+    background-color: var(--correct-color);
+}
+
+.almost {
+    background-color: var(--almost-color);
+}
+
+.wrong {
+    background-color: var(--wrong-color);
+}
+
+#answerBox {
+    width: 30%;
+    outline: none;
+    height: 5%;
+    background-color: var(--bg-color2);
+    border: 1px solid var(--text-color);
+    font-size: 200%;
+    color: var(--text-color);
+}
+
+#showWordButton {
+    width: 20%;
+    height: 5%;
+    color: var(--text-color);
+    background-color: var(--bg-color2);
+    border: 1px solid var(--text-color);
+    font-size: 100%;
+    border-radius: 3%;
+}
